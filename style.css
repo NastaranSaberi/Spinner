@@ -1,0 +1,116 @@
+*{
+	box-sizing:border-box;
+    margin:0;
+	padding:0;
+}
+
+body{
+	
+	background-color: rgb(71, 69, 69);
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	
+}
+
+#spinner{
+	width:500px;
+	height:500px;
+	background-color: #ccc;
+	border-radius:50%;
+	border:15px solid #dde;
+	position: relative;
+	overflow: hidden;
+	transition: 5s;
+    box-shadow: -5px -5px 5px white,
+    5px  5px 5px rgba(0,0,0,0.3) ;
+
+}
+
+#spinner div{
+	height:50%;
+	width:200px;
+	position: absolute;
+	clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+	transform:translateX(-50%);
+	transform-origin:bottom;
+	text-align:center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	font-size:20px;
+	font-family:sans-serif;
+	color:#fff;
+	left:135px;
+}
+
+#spinner .one{
+	background-color: #e44c10;
+	font-size: 40px;
+	left:50%;
+}
+#spinner .two{
+	background-color: #ffc410;
+	font-size: 40px;
+	transform: rotate(45deg);
+}
+#spinner .three{
+	background-color: #00ddb5;
+	font-size: 40px;
+	transform:rotate(90deg);
+}
+#spinner .four{
+	background-color: #3333cb;
+	font-size: 40px;
+	transform: rotate(135deg);
+}
+#spinner .five{
+	background-color: gray;
+	font-size: 40px;
+	transform: rotate(180deg);
+}
+#spinner .six{
+	background-color:rebeccapurple;
+	font-size: 40px;
+	transform: rotate(225deg);
+}
+#spinner .seven{
+	background-color: #ff96d3;
+	font-size: 40px;
+	transform: rotate(270deg);
+}
+#spinner .eight{
+	background-color: rgb(236, 230, 230);
+	font-size: 40px;
+	transform: rotate(315deg);
+}
+
+.arrow img{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+    top:-20px;
+	left:43%;
+	background: none;
+}
+
+#btn{
+	position: absolute;
+    bottom: 20px;
+    width: 200px;
+    height: 40px;
+	background: white;
+	border-radius: 40px;
+	border: none;
+	color: black;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 30px;
+	font-weight:700;
+	box-shadow: -2px -2px 2px white,
+    5px  5px 5px rgba(0,0,0,0.3) ;
+}
+
+#btn:hover{
+	transform: scale(0.96);
+}
